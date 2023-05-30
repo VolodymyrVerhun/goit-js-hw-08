@@ -20,6 +20,8 @@ function formSubmit (event) {
     event.preventDefault();
     localStorage.removeItem(STORAGE_KEY);
     event.target.reset();
+    console.log(formData);
+    formData = {};
 };
 
 function onLoadForm () {
